@@ -1,0 +1,6 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/Resources/UI/StartMenu/StartMenuStyle/screen.uss?fileID=7433441132597879392&amp;guid=75c49dd0d0652ed48a9920e80effa720&amp;type=3#screen" />
+    <ui:VisualElement name="main-menu-screen" class="screen" style="background-image: resource(&apos;UI/StartMenu/Graphics/backgroundGradient&apos;); -unity-background-scale-mode: scale-and-crop;">
+        <ui:VisualElement name="container" style="flex-shrink: 0; height: 50%; width: 100%; justify-content: center; align-items: center; translate: 0 270px;" />
+    </ui:VisualElement>
+</ui:UXML>
