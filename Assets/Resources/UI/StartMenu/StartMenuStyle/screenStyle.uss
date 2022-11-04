@@ -1,0 +1,16 @@
+.main-screen {
+    background-image: resource('UI/StartMenu/Graphics/backgroundGradient');
+    -unity-background-scale-mode: scale-and-crop;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+.button_container {
+    flex-shrink: 0;
+    height: 50%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    translate: 0 300px;
+}
