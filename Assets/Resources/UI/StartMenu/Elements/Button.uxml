@@ -1,6 +1,6 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
-    <Style src="project://database/Assets/Resources/UI/StartMenuStyle/startMenu.uss?fileID=7433441132597879392&amp;guid=bbac909552f06cb44a5ed67b6e329cf1&amp;type=3#startMenu" />
-    <ui:VisualElement style="flex-shrink: 0; flex-grow: 0; align-items: center; justify-content: center; width: 1080px; height: 200px;">
+    <Style src="project://database/Assets/Resources/UI/StartMenu/StartMenuStyle/startMenuStyle.uss?fileID=7433441132597879392&amp;guid=bbac909552f06cb44a5ed67b6e329cf1&amp;type=3#startMenuStyle" />
+    <ui:VisualElement style="flex-shrink: 0; flex-grow: 0; align-items: center; justify-content: center; width: 1080px; height: 200px; -unity-font: resource(&apos;UI/StartMenu/Graphics/Fonts/GardensC&apos;); -unity-font-definition: none;">
         <ui:Button text="Button" display-tooltip-when-elided="true" name="menu-button" class="menu-button" />
     </ui:VisualElement>
 </ui:UXML>

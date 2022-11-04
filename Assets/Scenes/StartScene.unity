@@ -238,15 +238,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _menuItems:
-  - ItemName: Start
+  - ItemName: START
+    Callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 810671235}
+          m_TargetAssemblyTypeName: CodeBase.UI.Services.WindowService, Assembly-CSharp
+          m_MethodName: StartButtonPressed
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - ItemName: SETTING
     Callback:
       m_PersistentCalls:
         m_Calls: []
-  - ItemName: Setting
-    Callback:
-      m_PersistentCalls:
-        m_Calls: []
-  - ItemName: Quit
+  - ItemName: QUIT
     Callback:
       m_PersistentCalls:
         m_Calls: []

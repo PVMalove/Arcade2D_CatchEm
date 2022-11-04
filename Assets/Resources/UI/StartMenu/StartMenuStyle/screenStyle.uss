@@ -14,3 +14,23 @@
     align-items: center;
     translate: 0 300px;
 }
+
+.menu-center-panel {
+    width: 50%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    justify-content: center;
+    align-items: center;
+    min-width: 1080px;
+}
+
+.menu-start-title {
+    width: 100%;
+    height: 35%;
+    min-height: 150px;
+    background-image: resource('UI/StartMenu/Graphics/Logo');
+    -unity-background-scale-mode: scale-to-fit;
+    align-items: center;
+    justify-content: center;
+    translate: 0 78px;
+}

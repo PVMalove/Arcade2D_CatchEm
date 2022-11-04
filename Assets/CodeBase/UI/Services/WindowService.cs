@@ -1,8 +1,7 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 using UnityEngine.UIElements;
 
 namespace CodeBase.UI.Services
@@ -14,9 +13,9 @@ namespace CodeBase.UI.Services
 
         [SerializeField] private VisualTreeAsset _buttonTemplate;
 
-        [Header("Transition setting")] [SerializeField]
-        private int _distance;
-
+        [Header("Transition setting")]
+        
+        [SerializeField] private int _distance;
         [SerializeField] private float _duration;
         [SerializeField] private float _appearanceDelay;
         [SerializeField] private EasingMode _easingMode;
@@ -25,10 +24,8 @@ namespace CodeBase.UI.Services
         private List<TimeValue> _durationValues;
         private StyleList<EasingFunction> _easingValues;
 
-        private void Awake()
-        {
+        private void Awake() =>
             _container = GetComponent<UIDocument>().rootVisualElement.Q<VisualElement>("container");
-        }
 
         private void Start()
         {
@@ -51,25 +48,23 @@ namespace CodeBase.UI.Services
 
                 _container.Add(newElement);
                 
-                newElement.style.transitionDuration = _durationValues;
-                newElement.style.transitionTimingFunction = _easingValues;
-                newElement.style.marginTop = _distance;
-                yield return null;
-                newElement.style.marginTop = 0;
+                yield return TransitionFX(newElement);
             }
         }
 
-        private void OnClick(MenuItems item)
+        private IEnumerator TransitionFX(VisualElement newElement)
         {
-            Debug.Log("Button clicked" + item.ItemName);
-            item.Callback.Invoke();
+            newElement.style.transitionDuration = _durationValues;
+            newElement.style.transitionTimingFunction = _easingValues;
+            newElement.style.marginTop = _distance;
+            yield return null;
+            newElement.style.marginTop = 0;
         }
-    }
 
-    [Serializable]
-    public class MenuItems
-    {
-        public string ItemName;
-        public UnityEvent Callback;
+        private void OnClick(MenuItems item) => 
+            item.Callback.Invoke();
+        
+        public void StartButtonPressed() => 
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 }

@@ -1,41 +1,43 @@
 .menu-button {
+    -unity-font: resource('UI/StartMenu/Graphics/Fonts/GardensC');
+    -unity-font-style: normal;
     width: 800px;
     align-items: center;
     justify-content: center;
     -unity-text-align: middle-center;
     white-space: nowrap;
     height: 150px;
-    -unity-font: url('project://database/Assets/Plugins/UI%20Toolkit/UnityThemes/UnityDefaultRuntimeTheme.tss?fileID=2230732570650464555&guid=6f8bfcaf0b3d07d42b3542458015804d&type=3#NotInter-Regular');
     font-size: 90px;
-    -unity-font-style: bold;
     position: relative;
     border-top-left-radius: 25px;
     border-bottom-left-radius: 25px;
     border-top-right-radius: 25px;
     border-bottom-right-radius: 25px;
     border-bottom-width: 15px;
+    flex-shrink: 0;
     border-left-color: rgb(195, 195, 195);
     border-right-color: rgb(195, 195, 195);
     border-top-color: rgb(195, 195, 195);
     border-bottom-color: rgb(195, 195, 195);
-    background-color: rgb(78, 91, 113);
+    background-color: rgb(123, 150, 173);
+    color: rgb(210, 210, 210);
     transition-property: width, height, border-color;
     transition-duration: 200ms, 200ms, 200ms;
-    color: rgba(210, 210, 210, 255);
-    flex-shrink: 0;
 }
 
 .menu-button:hover {
+    -unity-font-definition: none;
+    -unity-font: resource('UI/StartMenu/Graphics/Fonts/GardensC');
     background-color: rgb(67, 77, 101);
-    border-left-color: rgb(204, 180, 57);
-    border-right-color: rgb(204, 180, 57);
-    border-top-color: rgb(204, 180, 57);
-    border-bottom-color: rgb(204, 180, 57);
+    border-left-color: rgb(76, 236, 72);
+    border-right-color: rgb(76, 236, 72);
+    border-top-color: rgb(76, 236, 72);
+    border-bottom-color: rgb(76, 236, 72);
     width: 880px;
     height: 165px;
-    transition-property: width, height, border-color;
-    transition-duration: 300ms, 300ms, 200ms;
-    transition-timing-function: ease-in-out-back, ease-out-back, ease;
-    transition-delay: 0ms, 0s, 300ms;
     flex-shrink: 0;
+    transition-property: width, height, border-color;
+    transition-duration: 300ms, 300ms, 70ms;
+    transition-timing-function: ease-in-out-back, ease-out-back, ease;
+    transition-delay: 0ms, 0s, 200ms;
 }
