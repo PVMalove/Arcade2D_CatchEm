@@ -1,4 +1,6 @@
-﻿using CodeBase.Infrastructure.Pool;
+﻿using System;
+using CodeBase.Infrastructure.Pool;
+using CodeBase.Logic;
 using UnityEngine;
 
 namespace CodeBase.Emoji
@@ -14,7 +16,6 @@ namespace CodeBase.Emoji
         private void OnMouseDown()
         {
             Dispose();
-            Debug.Log("- life");
         }
     }
 }

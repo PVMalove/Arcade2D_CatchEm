@@ -1,4 +1,5 @@
 ﻿using CodeBase.Infrastructure.Pool;
+using CodeBase.Logic;
 using UnityEngine;
 
 namespace CodeBase.Emoji
@@ -6,11 +7,10 @@ namespace CodeBase.Emoji
     public class GoodEmoji : MonoBehaviour
     {
         [SerializeField]private float _cost = 10f;
-
+        
         private void OnTriggerEnter2D(Collider2D col)
         {
             Dispose();
-            Debug.Log("- life");
         }
 
         private void Dispose()
@@ -23,5 +23,7 @@ namespace CodeBase.Emoji
             Debug.Log("Cost" + _cost);
             Dispose();
         }
+
+
     }
 }

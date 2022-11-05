@@ -1,5 +1,5 @@
 .menu-button {
-    -unity-font: resource('UI/StartMenu/Graphics/Fonts/GardensC');
+    -unity-font: resource('UI/StartMenu/Art/Fonts/GardensC');
     -unity-font-style: normal;
     width: 800px;
     align-items: center;
@@ -27,7 +27,7 @@
 
 .menu-button:hover {
     -unity-font-definition: none;
-    -unity-font: resource('UI/StartMenu/Graphics/Fonts/GardensC');
+    -unity-font: resource('UI/StartMenu/Art/Fonts/GardensC');
     background-color: rgb(67, 77, 101);
     border-left-color: rgb(76, 236, 72);
     border-right-color: rgb(76, 236, 72);
