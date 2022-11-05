@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1675ca1885e647e88c4e999d1164b08c, type: 3}
+  m_Name: PoolPreset_SpawnEmoji
+  m_EditorClassIdentifier: 
+  poolName: EmojiSpawn
+  poolItems:
+  - prefab: {fileID: 1030102541372859412, guid: 85c8336d31918914996debf0f6f00013, type: 3}
+    size: 5
+  - prefab: {fileID: 5354677105704198157, guid: bc4e9b5c47743c84d811348ac21b4005, type: 3}
+    size: 5
+  - prefab: {fileID: 9105110052843596359, guid: a20c21de535e30c48aff875e8fe13e77, type: 3}
+    size: 5
+  - prefab: {fileID: 1584466084729030608, guid: 27f3c1fc64991ae42851c5ed4b03a50c, type: 3}
+    size: 5
