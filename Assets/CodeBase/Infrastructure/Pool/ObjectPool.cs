@@ -112,7 +112,7 @@ namespace CodeBase.Infrastructure.Pool
             }
             else
             {
-                Debug.LogError($"{toDespawn.name} was not spawned by NightPool and will be destroyed!");
+                Debug.LogError($"{toDespawn.name} was not spawned and will be destroyed!");
                 Object.Destroy(toDespawn, delay);
             }
         }

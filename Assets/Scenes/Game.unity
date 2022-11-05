@@ -218,6 +218,7 @@ GameObject:
   - component: {fileID: 611823383}
   - component: {fileID: 611823382}
   - component: {fileID: 611823384}
+  - component: {fileID: 611823385}
   m_Layer: 5
   m_Name: HUD
   m_TagString: Untagged
@@ -268,6 +269,64 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b2cd32d8e8a46cc9a370425dcc9ab1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &611823385
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 611823381}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2183490d81c411dbaff33b50ef1c0e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _currentHealth: 5
+--- !u!1 &1034776398
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1034776400}
+  - component: {fileID: 1034776399}
+  m_Layer: 0
+  m_Name: GameOver
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1034776399
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1034776398}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71ebf892c48145bfa257d58abb4a3cf7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _health: {fileID: 611823385}
+--- !u!4 &1034776400
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1034776398}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1356346101
 GameObject:
   m_ObjectHideFlags: 0
@@ -404,6 +463,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7970551526275282347, guid: 4cd8c58ef79724145856d47335483c3c, type: 3}
+      propertyPath: _gameOver
+      value: 
+      objectReference: {fileID: 1034776399}
+    - target: {fileID: 7970551526275282347, guid: 4cd8c58ef79724145856d47335483c3c, type: 3}
       propertyPath: _badEmojiPrefab.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -440,6 +503,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 279057112983633457, guid: 024ef330ed45e4142aecf5ab737122ce, type: 3}
+      propertyPath: health
+      value: 
+      objectReference: {fileID: 611823385}
     - target: {fileID: 4288323842356567531, guid: 024ef330ed45e4142aecf5ab737122ce, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -486,7 +553,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4288323842356567532, guid: 024ef330ed45e4142aecf5ab737122ce, type: 3}
       propertyPath: m_Name
-      value: Destroyer
+      value: DestroyerZona
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 024ef330ed45e4142aecf5ab737122ce, type: 3}

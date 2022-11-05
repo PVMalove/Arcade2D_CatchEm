@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 6197287776934127572}
   m_Layer: 0
   m_Name: E9
-  m_TagString: Untagged
+  m_TagString: Good
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -138,5 +138,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9601f1a826c840fd9835d75cf14b1222, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _cost: 10
-  _currentHealth: 5
+  triggerObserver: {fileID: 0}
