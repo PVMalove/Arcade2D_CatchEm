@@ -2,6 +2,7 @@
 using CodeBase.Emoji;
 using CodeBase.Logic;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 namespace CodeBase.TEST
 {
@@ -30,7 +31,6 @@ namespace CodeBase.TEST
 
         private void TakeDamage()
         {
-            Debug.Log("sss");
             _health.TakeDamage();
         }
 
@@ -41,7 +41,9 @@ namespace CodeBase.TEST
 
         private void Accrual()
         {
-            _gameData.Scores++;
+            int rand = Random.Range(20, 40);
+            _gameData.Scores += rand;
+            UpdateScores();
         }
     }
 }

@@ -139,7 +139,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!212 &139172053
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -181,7 +181,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: -1
-  m_Sprite: {fileID: 21300000, guid: a4e8d3e6bffe91b4e8fc0c426d4539fb, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 78dbbe4c812ef81469e855566a2c0d8e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 0.94509804}
   m_FlipX: 0
   m_FlipY: 0
@@ -274,7 +274,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1034776400}
-  - component: {fileID: 1034776399}
+  - component: {fileID: 1034776401}
   m_Layer: 0
   m_Name: GameOver
   m_TagString: Untagged
@@ -282,19 +282,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1034776399
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1034776398}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 71ebf892c48145bfa257d58abb4a3cf7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _health: {fileID: 611823385}
 --- !u!4 &1034776400
 Transform:
   m_ObjectHideFlags: 0
@@ -310,6 +297,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1034776401
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1034776398}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71ebf892c48145bfa257d58abb4a3cf7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _health: {fileID: 611823385}
 --- !u!1 &1356346101
 GameObject:
   m_ObjectHideFlags: 0
@@ -448,7 +448,7 @@ PrefabInstance:
     - target: {fileID: 7970551526275282347, guid: 4cd8c58ef79724145856d47335483c3c, type: 3}
       propertyPath: _gameOver
       value: 
-      objectReference: {fileID: 1034776399}
+      objectReference: {fileID: 0}
     - target: {fileID: 7970551526275282347, guid: 4cd8c58ef79724145856d47335483c3c, type: 3}
       propertyPath: _badEmojiPrefab.Array.size
       value: 1

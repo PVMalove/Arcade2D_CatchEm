@@ -10,9 +10,6 @@ namespace CodeBase.Logic.Spawner
     {
         private const int ProbabilityRatio = 20;
 
-        
-        [SerializeField] private GameOver _gameOver;
-
         [SerializeField] public GameObject[] _goodEmojiPrefab;
         [SerializeField] private GameObject[] _badEmojiPrefab;
 
@@ -30,12 +27,12 @@ namespace CodeBase.Logic.Spawner
         }
 
         private void OnEnable() =>
-            _gameOver.Happend += StopSpawn;
+            GameOver.GameLost += StopSpawn;
 
         private void StopSpawn()
         {
             ObjectPool.DestroyAllPools();
-            _gameOver.Happend -= StopSpawn;
+            GameOver.GameLost -= StopSpawn;
             _isGame = false;
         }
 

@@ -9,7 +9,7 @@ namespace CodeBase
     {
         [SerializeField] private IncreaseHealth _health;
        
-        public event Action Happend;
+        public static event Action GameLost;
 
         private void OnEnable()
         {
@@ -26,7 +26,7 @@ namespace CodeBase
             if (_health.Current <= 0)
             {
                 Debug.Log("GameOver");
-                Happend?.Invoke();
+                GameLost?.Invoke();
             }
         }
     }
