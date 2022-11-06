@@ -1,7 +1,10 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
     <ui:VisualElement name="main-screen" style="width: 100%; height: 100%; background-image: none; -unity-background-scale-mode: scale-and-crop;">
-        <ui:VisualElement name="bar" style="width: 100%; height: 10%; align-items: flex-end; margin-top: 10px;">
-            <ui:VisualElement name="container-health" style="flex-direction: row; justify-content: space-between; width: 50%; height: 50%; margin-left: 0; margin-right: 10px;">
+        <ui:VisualElement name="bar" style="width: 100%; height: 10%; align-items: stretch; margin-top: 10px; justify-content: space-between; flex-direction: row;">
+            <ui:VisualElement name="container-scores" style="align-items: flex-start; justify-content: flex-start; width: 300px; height: 100%;">
+                <ui:Label text="0" display-tooltip-when-elided="true" name="scores-count" enable-rich-text="true" style="-unity-font: resource(&apos;UI/StartMenu/Art/Fonts/GardensC&apos;); -unity-font-definition: none; font-size: 140px; margin-left: 30px; color: rgb(91, 243, 107);" />
+            </ui:VisualElement>
+            <ui:VisualElement name="container-health" style="flex-direction: row; justify-content: space-between; width: 50%; height: 50%; margin-left: 0; margin-right: 10px; margin-top: 30px;">
                 <ui:VisualElement name="heart" style="height: 100%; margin-left: 1px; margin-right: 1px; margin-top: 1px; margin-bottom: 1px; background-image: resource(&apos;UI/Game/Art/Heart&apos;); width: 100px;" />
                 <ui:VisualElement name="heart" style="height: 100%; margin-left: 1px; margin-right: 1px; margin-top: 1px; margin-bottom: 1px; background-image: resource(&apos;UI/Game/Art/Heart&apos;); width: 100px;" />
                 <ui:VisualElement name="heart" style="height: 100%; margin-left: 1px; margin-right: 1px; margin-top: 1px; margin-bottom: 1px; background-image: resource(&apos;UI/Game/Art/Heart&apos;); width: 100px;" />

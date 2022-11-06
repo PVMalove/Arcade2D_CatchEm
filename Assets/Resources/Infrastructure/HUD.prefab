@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2651441188820356222}
   - component: {fileID: 2651441188820356208}
   - component: {fileID: 2651441188820356209}
+  - component: {fileID: 1184526285}
   m_Layer: 5
   m_Name: HUD
   m_TagString: Untagged
@@ -46,7 +47,7 @@ MonoBehaviour:
   m_Script: {fileID: 19102, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_PanelSettings: {fileID: 11400000, guid: 099234aa075d00a4eaa27e2f26f17f00, type: 2}
+  m_PanelSettings: {fileID: 11400000, guid: 156bdf719dcfa5e41a0769ee2b79c58a, type: 2}
   m_ParentUI: {fileID: 0}
   sourceAsset: {fileID: 9197481963319205126, guid: e7351ba27f148d2409ab9b18608e1259, type: 3}
   m_SortingOrder: 0
@@ -74,4 +75,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2183490d81c411dbaff33b50ef1c0e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _actorUI: {fileID: 2651441188820356208}
   _currentHealth: 5
+--- !u!114 &1184526285
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2651441188820356221}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d253bbb5f95241bcbae56a7886a179ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _document: {fileID: 2651441188820356222}

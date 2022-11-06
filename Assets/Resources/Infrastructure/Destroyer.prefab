@@ -45,7 +45,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e83577c09344a46a3b383e016c6286e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: {fileID: 2651441188820356209, guid: 778f5991ff07b4d49bec4bd2b6a66e6b, type: 3}
+  health: {fileID: 0}
   triggerObserver: {fileID: 1703753732648136948}
   badEmoji: {fileID: -8194560723504701719, guid: 27f3c1fc64991ae42851c5ed4b03a50c, type: 3}
   _damage: 1

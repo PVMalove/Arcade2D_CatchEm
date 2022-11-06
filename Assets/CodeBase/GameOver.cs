@@ -8,11 +8,18 @@ namespace CodeBase
     public class GameOver : MonoBehaviour
     {
         [SerializeField] private IncreaseHealth _health;
-
+       
         public event Action Happend;
-        
-        private void Start() =>
+
+        private void OnEnable()
+        {
             _health.HealthChanged += HealthChanged;
+        }
+
+        private void OnDisable()
+        {
+            _health.HealthChanged -= HealthChanged;
+        }
 
         private void HealthChanged()
         {

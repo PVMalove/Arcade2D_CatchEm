@@ -9,7 +9,7 @@ namespace CodeBase.Logic
         [SerializeField] private IncreaseHealth health;
         [SerializeField] private TriggerObserver triggerObserver;
         [SerializeField] private BadEmoji badEmoji;
-
+        
         [SerializeField] private int _damage = 1;
 
         private void Start()

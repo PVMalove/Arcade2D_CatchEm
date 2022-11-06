@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using CodeBase.Infrastructure.Pool;
 using UnityEngine;
 using Random = UnityEngine.Random;
@@ -9,6 +10,7 @@ namespace CodeBase.Logic.Spawner
     {
         private const int ProbabilityRatio = 20;
 
+        
         [SerializeField] private GameOver _gameOver;
 
         [SerializeField] public GameObject[] _goodEmojiPrefab;
