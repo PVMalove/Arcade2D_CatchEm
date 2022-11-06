@@ -139,7 +139,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &139172053
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -238,6 +238,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _gameData:
     Scores: 0
+  _health: {fileID: 611823385}
 --- !u!4 &550671724
 Transform:
   m_ObjectHideFlags: 0

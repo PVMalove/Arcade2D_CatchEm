@@ -8,25 +8,24 @@ namespace CodeBase.Logic
     {
         [SerializeField] private IncreaseHealth health;
         [SerializeField] private TriggerObserver triggerObserver;
-        [SerializeField] private BadEmoji badEmoji;
+        //[SerializeField] private BadEmoji badEmoji;
         
-        [SerializeField] private int _damage = 1;
+        //[SerializeField] private int _damage = 1;
 
         private void Start()
         {
-            badEmoji.OnClick += Damage;
+            //badEmoji.OnClick += Damage;
         }
 
         private void OnEnable()
         {
             triggerObserver.TriggerEnter += TriggerEnter2D;
-            
         }
 
-        private void Damage()
-        {
-            health.TakeDamage(_damage);
-        }
+        // private void Damage()
+        // {
+        //     health.TakeDamage(_damage);
+        // }
 
         private void OnDisable() => 
             triggerObserver.TriggerEnter -= TriggerEnter2D;
@@ -34,7 +33,7 @@ namespace CodeBase.Logic
         private void TriggerEnter2D(Collider2D obj)
         {
             if (obj.gameObject.CompareTag("Good"))
-                health.TakeDamage(_damage);
+                health.TakeDamage();
         }
     }
 }

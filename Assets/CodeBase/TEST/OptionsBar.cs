@@ -16,6 +16,11 @@ namespace CodeBase.TEST
         {
             GameDataManager.ScoresUpdated += OnScoresUpdated;
         }
+        
+        private void OnDisable()
+        {
+            GameDataManager.ScoresUpdated -= OnScoresUpdated;
+        }
 
         protected override void SetVisualElements()
         {
@@ -29,7 +34,7 @@ namespace CodeBase.TEST
         }
 
 
-        public void SetScores(int scores)
+        private void SetScores(int scores)
         {
             int startValue = (int) Int32.Parse(_scoresLabel.text);
             StartCoroutine(LerpRoutine(_scoresLabel, startValue, scores, _lerpTime));

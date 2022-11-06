@@ -6,6 +6,6 @@ namespace CodeBase
     {
         event Action HealthChanged;
         int Current { get; set; }
-        void TakeDamage(int damage);
+        void TakeDamage();
     }
 }

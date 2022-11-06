@@ -19,12 +19,12 @@ namespace CodeBase.Logic
             set => _currentHealth = value;
         }
 
-        public void TakeDamage(int damage)
+        public void TakeDamage()
         {
             if (Current <= 0)
                 return;
 
-            Current -= damage;
+            Current -= 1;
             _actorUI.AnimateBar();
             HealthChanged?.Invoke();
         }

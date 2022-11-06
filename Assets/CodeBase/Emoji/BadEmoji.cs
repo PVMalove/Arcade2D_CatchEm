@@ -6,18 +6,32 @@ namespace CodeBase.Emoji
 {
     public class BadEmoji : MonoBehaviour
     {
-        public event Action OnClick;
+        //public event Action OnClick;
         
         private void OnTriggerEnter2D(Collider2D col) =>
             Dispose();
 
-        private void OnMouseDown()
-        {
-            Dispose();
-            OnClick?.Invoke();
-        }
+        // private void OnMouseDown()
+        // {
+        //     Dispose();
+        //     OnClick?.Invoke();
+        // }
 
         private void Dispose() =>
             ObjectPool.Despawn(gameObject, 0.1f);
+        
+        
+        
+        /////
+        
+        
+        public static event Action Damage;
+        
+        private void OnMouseDown()
+        {
+            Damage?.Invoke();
+            Dispose();
+        }
+        
     }
 }
