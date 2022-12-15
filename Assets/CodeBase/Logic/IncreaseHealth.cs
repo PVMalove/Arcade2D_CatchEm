@@ -5,7 +5,7 @@ using UnityEngine;
 namespace CodeBase.Logic
 {
     [RequireComponent(typeof(ActorUI))]
-    public class IncreaseHealth : MonoBehaviour, IHealth
+    public class IncreaseHealth : MonoBehaviour
     {
         [SerializeField] private ActorUI _actorUI;
         

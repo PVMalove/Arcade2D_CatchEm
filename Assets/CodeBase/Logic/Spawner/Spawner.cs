@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using CodeBase.Infrastructure.Pool;
 using UnityEngine;
 using Random = UnityEngine.Random;

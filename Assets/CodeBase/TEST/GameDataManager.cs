@@ -13,15 +13,11 @@ namespace CodeBase.TEST
         [SerializeField] private GameData _gameData;
         [SerializeField] private IncreaseHealth _health;
 
-        private void Start()
-        {
+        private void Start() => 
             UpdateScores();
-        }
 
-        private void UpdateScores()
-        {
+        private void UpdateScores() => 
             ScoresUpdated?.Invoke(_gameData);
-        }
 
         private void OnEnable()
         {
@@ -29,15 +25,11 @@ namespace CodeBase.TEST
             BadEmoji.Damage += TakeDamage;
         }
 
-        private void TakeDamage()
-        {
+        private void TakeDamage() => 
             _health.TakeDamage();
-        }
 
-        private void OnDisable()
-        {
+        private void OnDisable() => 
             GoodEmoji.Scoring -= Accrual;
-        }
 
         private void Accrual()
         {

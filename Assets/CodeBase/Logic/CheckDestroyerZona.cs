@@ -8,24 +8,9 @@ namespace CodeBase.Logic
     {
         [SerializeField] private IncreaseHealth health;
         [SerializeField] private TriggerObserver triggerObserver;
-        //[SerializeField] private BadEmoji badEmoji;
-        
-        //[SerializeField] private int _damage = 1;
 
-        private void Start()
-        {
-            //badEmoji.OnClick += Damage;
-        }
-
-        private void OnEnable()
-        {
+        private void OnEnable() => 
             triggerObserver.TriggerEnter += TriggerEnter2D;
-        }
-
-        // private void Damage()
-        // {
-        //     health.TakeDamage(_damage);
-        // }
 
         private void OnDisable() => 
             triggerObserver.TriggerEnter -= TriggerEnter2D;
