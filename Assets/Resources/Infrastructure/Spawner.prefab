@@ -44,8 +44,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59027095571540cc9e2908484a078015, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _goodEmojiPrefab: []
-  _badEmojiPrefab: []
+  _goodEmojiPrefab:
+  - {fileID: 1030102541372859412, guid: 85c8336d31918914996debf0f6f00013, type: 3}
+  - {fileID: 5354677105704198157, guid: bc4e9b5c47743c84d811348ac21b4005, type: 3}
+  - {fileID: 9105110052843596359, guid: a20c21de535e30c48aff875e8fe13e77, type: 3}
+  _badEmojiPrefab:
+  - {fileID: 1584466084729030608, guid: 27f3c1fc64991ae42851c5ed4b03a50c, type: 3}
   _leftPointSpawn: -2.4
   _rightPointSpawn: 2.4
-  _secondsBetweenSpawn: 1
+  _secondsBetweenSpawn: 3
+  _nonBoostSpawnTimer: 30
+  _boostSpawnTimer: 0.1
+  _minSecondsBetweenSpawn: 0.2
+  _maxSecondsBetweenSpawn: 5
+  _delayBoost: 10

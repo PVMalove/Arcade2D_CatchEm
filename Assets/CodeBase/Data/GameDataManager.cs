@@ -4,7 +4,7 @@ using CodeBase.Logic;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
-namespace CodeBase.TEST
+namespace CodeBase.Data
 {
     public class GameDataManager : MonoBehaviour
     {

@@ -446,33 +446,17 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7970551526275282347, guid: 4cd8c58ef79724145856d47335483c3c, type: 3}
-      propertyPath: _gameOver
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 7970551526275282347, guid: 4cd8c58ef79724145856d47335483c3c, type: 3}
-      propertyPath: _badEmojiPrefab.Array.size
+      propertyPath: _delayBoost
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7970551526275282347, guid: 4cd8c58ef79724145856d47335483c3c, type: 3}
-      propertyPath: _goodEmojiPrefab.Array.size
-      value: 3
+      propertyPath: _nonBoostSpawnTimer
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7970551526275282347, guid: 4cd8c58ef79724145856d47335483c3c, type: 3}
-      propertyPath: _badEmojiPrefab.Array.data[0]
-      value: 
-      objectReference: {fileID: 1584466084729030608, guid: 27f3c1fc64991ae42851c5ed4b03a50c, type: 3}
-    - target: {fileID: 7970551526275282347, guid: 4cd8c58ef79724145856d47335483c3c, type: 3}
-      propertyPath: _goodEmojiPrefab.Array.data[0]
-      value: 
-      objectReference: {fileID: 1030102541372859412, guid: 85c8336d31918914996debf0f6f00013, type: 3}
-    - target: {fileID: 7970551526275282347, guid: 4cd8c58ef79724145856d47335483c3c, type: 3}
-      propertyPath: _goodEmojiPrefab.Array.data[1]
-      value: 
-      objectReference: {fileID: 5354677105704198157, guid: bc4e9b5c47743c84d811348ac21b4005, type: 3}
-    - target: {fileID: 7970551526275282347, guid: 4cd8c58ef79724145856d47335483c3c, type: 3}
-      propertyPath: _goodEmojiPrefab.Array.data[2]
-      value: 
-      objectReference: {fileID: 9105110052843596359, guid: a20c21de535e30c48aff875e8fe13e77, type: 3}
+      propertyPath: _minSecondsBetweenSpawn
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 7970551526275282348, guid: 4cd8c58ef79724145856d47335483c3c, type: 3}
       propertyPath: m_Name
       value: Spawner

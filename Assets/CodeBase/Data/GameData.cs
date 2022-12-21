@@ -1,4 +1,4 @@
-﻿namespace CodeBase.TEST
+﻿namespace CodeBase.Data
 {
     [System.Serializable]
     public class GameData

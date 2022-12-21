@@ -1,10 +1,8 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using UnityEngine;
 using UnityEngine.UIElements;
 
-
-namespace CodeBase.TEST.TEST2
+namespace CodeBase.UI
 {
     public class GameScreen : MonoBehaviour
     {

@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using CodeBase.Infrastructure.Pool;
 using UnityEngine;
 using Random = UnityEngine.Random;
@@ -16,13 +17,23 @@ namespace CodeBase.Logic.Spawner
         private float _leftPointSpawn;
 
         [SerializeField] private float _rightPointSpawn;
+
+        [Header("Spawner timer setting")] 
         [SerializeField] private float _secondsBetweenSpawn;
+        [SerializeField] private float _nonBoostSpawnTimer;
+        [SerializeField] private float _boostSpawnTimer;
+        [SerializeField] private float _minSecondsBetweenSpawn;
+        [SerializeField] private float _maxSecondsBetweenSpawn;
+        [SerializeField] private float _delayBoost;
+
+        public static event Action<float> SpeedGame; 
 
         private bool _isGame = true;
 
         private void Start()
         {
             StartCoroutine(EmojiSpawn());
+            StartCoroutine(SpawnIntervalCounter());
         }
 
         private void OnEnable() =>
@@ -47,6 +58,7 @@ namespace CodeBase.Logic.Spawner
                         Quaternion.identity);
 
                 yield return new WaitForSeconds(_secondsBetweenSpawn);
+                SpeedGame?.Invoke(_secondsBetweenSpawn);
             }
         }
 
@@ -56,8 +68,21 @@ namespace CodeBase.Logic.Spawner
         private Vector3 GetPosition()
         {
             float wanted = Random.Range(_leftPointSpawn, _rightPointSpawn);
-            Vector3 position = new Vector3(wanted, transform.position.y);
+            Vector3 position = new(wanted, transform.position.y);
             return position;
+        }
+
+        private IEnumerator SpawnIntervalCounter()
+        {
+            yield return new WaitForSeconds(_nonBoostSpawnTimer);
+
+            while (_isGame)
+            {
+                yield return new WaitForSeconds(_delayBoost);
+                _secondsBetweenSpawn -= _boostSpawnTimer;
+                _secondsBetweenSpawn =
+                    Math.Clamp(_secondsBetweenSpawn, _minSecondsBetweenSpawn, _maxSecondsBetweenSpawn);
+            }
         }
     }
 }

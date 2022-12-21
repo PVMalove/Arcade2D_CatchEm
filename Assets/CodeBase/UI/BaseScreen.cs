@@ -1,8 +1,7 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UIElements;
 
-namespace CodeBase.TEST
+namespace CodeBase.UI
 {
     public abstract class BaseScreen : MonoBehaviour
     {

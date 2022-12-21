@@ -1,9 +1,10 @@
 ﻿using System;
 using System.Collections;
+using CodeBase.Data;
 using UnityEngine;
 using UnityEngine.UIElements;
 
-namespace CodeBase.TEST
+namespace CodeBase.UI
 {
     public class OptionsBar : BaseScreen
     {
